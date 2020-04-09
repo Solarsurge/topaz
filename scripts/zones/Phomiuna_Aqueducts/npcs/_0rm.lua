@@ -1,10 +1,8 @@
 -----------------------------------
--- Area: Phomiuna_Aqueducts
---  NPC: _0rm (Oil lamp)
--- Notes: Opens South door at J-7 from inside.
--- !pos -63.703 -26.227 83.000 27
------------------------------------
-require("scripts/globals/missions");
+--    Area: Phomiuna_Aqueducts
+--  NPC: Oil Lamp - North (West)
+-- Opens Door at F-7 from inside.
+--  ID: 16888052 !pos -63 -26 83
 -----------------------------------
 
 function onTrade(player,npc,trade)
@@ -16,7 +14,7 @@ function onTrigger(player,npc)
 
     if (GetNPCByID(DoorOffset):getAnimation() == 9) then
         if (player:getZPos() < 84) then
-            npc:openDoor(15); -- lamp animation
+            npc:openDoor(7); -- lamp animation
             GetNPCByID(DoorOffset):openDoor(7); -- _0rf
         end
     end

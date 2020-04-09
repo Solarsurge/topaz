@@ -1,7 +1,7 @@
 -----------------------------------
 --    Area: Phomiuna_Aqueducts
--- NPC: Oil Lamp - Darkness (West)
--- ID: 16888071  !pos -63 -26 57
+-- NPC: Oil Lamp - Thunder (East)
+-- ID: 16888082  !pos 104 -26 67
 -----------------------------------
 require("scripts/globals/missions");
 local ID = require("scripts/zones/Phomiuna_Aqueducts/IDs");
@@ -14,15 +14,19 @@ function onTrigger(player,npc)
 
     local DoorOffset = npc:getID();
 
-    player:messageSpecial(ID.text.LAMP_OFFSET+7); -- dark lamp
+    player:messageSpecial(ID.text.LAMP_OFFSET+5); -- lighting lamp
     npc:openDoor(7); -- lamp animation
 
     local element = VanadielDayElement();
     -- printf("element: %u",element);
 
-    if (element == 6 or element == 7) then -- lightday or darkday
-        if (GetNPCByID(DoorOffset-1):getAnimation() == 8) then -- lamp light open ?
-            GetNPCByID(DoorOffset-6):openDoor(15); -- Open Door _0rk
+    if (element == 5) then -- lightningday
+        if (GetNPCByID(DoorOffset-2):getAnimation() == 8) then -- lamp water open ?
+            GetNPCByID(DoorOffset-4):openDoor(15); -- Open Door _0rk
+        end
+    elseif (element == 1) then -- earthday
+        if (GetNPCByID(DoorOffset+2):getAnimation() == 8) then -- lamp earth open ?
+            GetNPCByID(DoorOffset-4):openDoor(15); -- Open Door _0rk
         end
     end
 
