@@ -6,23 +6,23 @@
 -----------------------------------
 
 function onTrade(player,npc,trade)
-end;
+end
 
 function onTrigger(player,npc)
 
-    local DoorOffset = npc:getID() - 1;
+    local DoorOffset = npc:getID() - 1
 
     if (GetNPCByID(DoorOffset):getAnimation() == 9) then
         if (player:getZPos() < 85) then
-            npc:openDoor(7); -- torch animation
-            GetNPCByID(DoorOffset):openDoor(7); -- _0rh
+            npc:openDoor(7) -- torch animation
+            GetNPCByID(DoorOffset):openDoor(7) -- _0rh
         end
     end
 
-end;
+end
 
 function onEventUpdate(player,csid,option)
-end;
+end
 
 function onEventFinish(player,csid,option)
-end;
+end
