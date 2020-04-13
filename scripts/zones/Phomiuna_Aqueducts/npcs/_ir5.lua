@@ -1,8 +1,8 @@
 -----------------------------------
---    Area: Phomiuna_Aqueducts
---  NPC: Oil Lamp - South (East)
+-- Area: Phomiuna_Aqueducts
+-- NPC: Oil Lamp - South (East)
 -- Opens Door at J-9 from inside.
---  ID: 16888059 !pos 104 -26 37
+-- !pos 104 -26 37
 -----------------------------------
 
 function onTrade(player,npc,trade)

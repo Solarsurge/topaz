@@ -1,7 +1,7 @@
 -----------------------------------
---    Area: Phomiuna_Aqueducts
---  NPC: Oil Lamp - Earth (East)
--- ID: 16888085  !pos 104 -26 53
+-- Area: Phomiuna_Aqueducts
+-- NPC: Oil Lamp - Earth (East)
+-- !pos 104 -26 53
 -----------------------------------
 local ID = require("scripts/zones/Phomiuna_Aqueducts/IDs")
 -----------------------------------

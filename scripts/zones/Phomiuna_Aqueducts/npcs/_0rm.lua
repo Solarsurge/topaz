@@ -1,8 +1,8 @@
 -----------------------------------
---    Area: Phomiuna_Aqueducts
---  NPC: Oil Lamp - North (West)
+-- Area: Phomiuna_Aqueducts
+-- NPC: Oil Lamp - North (West)
 -- Opens Door at F-7 from inside.
---  ID: 16888052 !pos -63 -26 83
+-- !pos -63 -26 83
 -----------------------------------
 
 function onTrade(player,npc,trade)

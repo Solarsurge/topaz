@@ -1,7 +1,7 @@
 -----------------------------------
---    Area: Phomiuna_Aqueducts
+-- Area: Phomiuna_Aqueducts
 -- NPC: Oil Lamp - Thunder (West)
--- ID: 16888069  !pos -63 -26 67
+-- !pos -63 -26 67
 -----------------------------------
 local ID = require("scripts/zones/Phomiuna_Aqueducts/IDs")
 -----------------------------------
