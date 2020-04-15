@@ -29,18 +29,3 @@ function onMobWeaponSkill(target, mob, skill)
         end
     end
 end
---[[function onMobWeaponSkill(target, mob, skill)
-    local momma = mob:getID()
-    local x = mob:getXPos()
-    local y = mob:getYPos()
-    local z = mob:getZPos()
-    for i = momma + 1, momma + mob:getLocalVar("maxBabies") do
-        local baby = GetMobByID(i)
-        if not baby:isSpawned() then
-            baby:spawn()
-			baby:setPos(x,y,z)
-			baby:updateEnmity(target)
-            break
-        end
-    end
-end--]]
