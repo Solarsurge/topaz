@@ -9,7 +9,6 @@ end
 
 function onMobSpawn(mob)
     mob:setLocalVar("maxBabies",4)
---    mob:setMobMod(tpz.mobMod.NO_AGGRO,1)
 end
 
 function onMobEngaged(mob,target)
