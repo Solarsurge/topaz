@@ -6,7 +6,7 @@
 
 function onMobSkillCheck(target,mob,skill)
     local momma = mob:getID()
-	local fam = 1
+    local fam = 1
     for i = momma + 1, momma + mob:getLocalVar("maxBabies") do
         local baby = GetMobByID(i)
         if not baby:isSpawned() then
